@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Fragment } from 'react'
 import './App.css'
-import { Button } from '@material-tailwind/react'
+import { HeroSection } from './components/Sections/HeroSection'
+import MarqueeJuice from './components/Sections/MarqueeJuice'
+import { ProductSection } from './components/Sections/ProductSection'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-
-    </>
+   <Fragment>
+      <HeroSection />
+      <MarqueeJuice />
+      <ProductSection />
+   </Fragment>
   )
 }
 
